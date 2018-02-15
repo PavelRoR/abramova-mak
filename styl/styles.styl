@@ -39,9 +39,10 @@ h1
 	font-size: 52px;
 	font-family: "PlayfairDisplayBlack", serif;
 	color: rgb(161, 144, 97);
-	line-height: 1
-	margin 25px 0
-	width: 700px
+	line-height: 1.05;
+	margin: 19px 0 6px
+	width: 700px;
+	letter-spacing: -0.9px;
 h3
 	font-size: 44px;
 	font-family: "PlayfairDisplayBlack", serif;
@@ -75,4 +76,23 @@ h3
 		right 0
 		bottom 0
 		cursor pointer
+.button
+	border: 1px solid rgb(154, 137, 88);
+	border-radius: 5px;
+	background-image: linear-gradient( 90deg, rgb(128,110,63) 15%, rgb(226,218,155) 100%);
+	box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.15), 0 0 5px rgba(#ffffbe, .28) inset
+	width: 260px;
+	font-size: 24px;
+	font-family: "PlayfairDisplayBlack", serif;
+	color: rgb(255, 255, 255);
+	line-height: 1.375;
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
+	min-height: 50px
+	&:hover
+		background-image: linear-gradient( 270deg, rgb(128,110,63) 15%, rgb(226,218,155) 100%);
+	&:hover
+	&:focus
+		text-decoration: none 
+		color rgb(255, 255, 255);
 @import 'parts/main.styl'
+@import 'parts/mail_section'
