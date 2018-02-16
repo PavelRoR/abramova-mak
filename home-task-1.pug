@@ -11,7 +11,13 @@ html(lang="ru")
 		title Домашнее задание 1 от Жанны Абрамовой «»
 		link(rel="stylesheet" href="css/bootstrap.min.css")
 		link(rel="stylesheet" href="css/styles.css")
+		script(src="//vk.com/js/api/openapi.js?151", type="text/javascript")
+		script(type="text/javascript")
+			| VK.init({apiId:6314801, onlyWidgets: true});
 	body#home_task
+		#fb-root
+		script
+			| (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.11&appId=1039482812818888';fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'))
 		#main_screen
 			include pug/header
 			#first_screen_section
@@ -25,10 +31,10 @@ html(lang="ru")
 						.col-md-6.col-sm-6.col-sx-12
 							.aut_n_date
 								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rerum excepturi temporibus voluptate provident ab itaque qui sed est, vitae nam aut quaerat voluptas quo hic recusandae ipsum quasi molestiae.
-			include pug/hw_feedback
+		include pug/hw_feedback
 		include pug/aux_footer
 		include pug/no_script
 		<!--BEGIN JIVOSITE CODE-->
-		script
+		//script
 			| (function() {var widget_id = 'cMdj5UfoZX';var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = '//code.jivosite.com/script/widget/' + widget_id;var ss = document.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s, ss);})();
 		<!--END JIVOSITE CODE-->

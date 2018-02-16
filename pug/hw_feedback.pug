@@ -1,0 +1,11 @@
+section#home-task-feedback
+	.container
+		h3 Ответы на задание и вопросы Жанне пишите в формах ниже
+		.row
+			.col-md-6.col-sm-6.col-sx-12
+				#vk_comments
+					script(type="text/javascript")
+						| VK.Widgets.Comments("vk_comments", { limit: 10,  attach: "*" });
+			.col-md-6.col-sm-6.col-sx-12
+				#fb
+					.fb-comments(data-href="https://mastervision.su/abramova-mak/home-task-1.html" data-width="100%" data-numposts="15")
