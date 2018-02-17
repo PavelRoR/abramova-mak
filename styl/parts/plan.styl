@@ -1,9 +1,8 @@
 #plan
     .red_wrapper
         background-color: pr_red
-        padding: 3px 0
+        padding: 46px 0 3px
         position relative
-        min-height: 128px;
         &:before
         &:after
             content: ''
@@ -27,13 +26,15 @@
                 content: url(../img/divider_white.png)
                 margin: 19px auto 0
         .button
-            margin-top: 35px;
+            margin-top: 0;
+        &:last-of-type
+            padding: 40px 0
 .day_wrapper
     background-image url(../img/bg_dark.jpg)
     background-repeat no-repeat
     background-position: center
     background-size cover
-    padding: 22px 0 52px
+    padding: 72px 0 52px
     .day_container
         display: table
         .day_number
@@ -41,14 +42,13 @@
             vertical-align: middle
             padding-left: 25px;
         .day_decription
-            margin-left: 105px;
+            margin-left: 145px;
             h4
                 font-size: 37px;
                 font-family: "PlayfairDisplayBlack", serif;
                 color: rgb(180, 167, 111);
                 text-decoration: underline;
                 line-height: 1
-                margin-left: 42px;
                 margin-bottom: 17px
                 letter-spacing: -0.5px;
             .bullits
@@ -70,7 +70,6 @@
             .day_decription
                 h4
                     color pr_red
-                    margin-left: 60px;
                     letter-spacing: -0.7px;
                     margin-bottom: 20px;
                  .bullits
