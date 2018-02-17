@@ -65,8 +65,8 @@ $(document).ready(function () {
         items: 4,
         itemsDesktop: false,
         itemsDesktopSmall: false,
-        itemsTablet: false,
-        itemsMobile: false
+        itemsTablet: [768, 2],
+        itemsMobile: [480, 1]
     });
     /*Карусель отзывов*/
     $("#text_testims").owlCarousel({
