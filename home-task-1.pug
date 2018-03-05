@@ -5,10 +5,10 @@ html(lang="ru")
 		meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
 		meta(name="author" content="Master Vision")
-		meta(name="description" content="Домашнее задание 1 от Жанны Абрамовой «»")
+		meta(name="description" content="Домашнее задание 1 от Жанны Абрамовой «Как поступить в той или иной ситуации?»")
 		link(rel="icon" type="image/x-icon" href="favicon.ico")
 		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
-		title Домашнее задание 1 от Жанны Абрамовой «»
+		title Домашнее задание 1 от Жанны Абрамовой «Как поступить в той или иной ситуации?»
 		link(rel="stylesheet" href="css/bootstrap.min.css")
 		link(rel="stylesheet" href="css/styles.css")
 		script(src="//vk.com/js/api/openapi.js?151", type="text/javascript")
@@ -23,15 +23,27 @@ html(lang="ru")
 			#first_screen_section
 				.container
 					p#pre 1 домашнее задание от Жанны Абрамовой
-					h1 Загаловок задания
+					h1 Как поступить в той или иной ситуации?
 					.row
 						.col-md-6.col-sm-6
 								.video_wrapper
-									iframe(src="https://www.youtube.com/embed/?rel=0&autoplay=1", allowfullscreen)
+									iframe(src="https://www.youtube.com/embed/QNG_iCk5q5c?rel=0&autoplay=1", allowfullscreen)
 						.col-md-6.col-sm-6
 							.aut_n_date
-								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rerum excepturi temporibus voluptate provident ab itaque qui sed est, vitae nam aut quaerat voluptas quo hic recusandae ipsum quasi molestiae.
-		include pug/hw_feedback
+								p 
+									strong Вопрос: 
+									| Напишите под видео, что вы чувствовали, какие ответы вам приходили во время выполнения этой техники.
+		section#home-task-feedback
+			.container
+				h3 Ответы на задание и вопросы Жанне пишите в формах ниже
+				.row
+					.col-md-6.col-sm-6
+						#vk_comments
+							script(type="text/javascript")
+								| VK.Widgets.Comments("vk_comments", { limit: 10,  attach: "*" });
+					.col-md-6.col-sm-6
+						#fb
+							.fb-comments(data-href="https://mastervision.su/abramova-mak/home-task-1.html" data-width="100%" data-numposts="15")
 		include pug/aux_footer
 		include pug/no_script
 		<!--BEGIN JIVOSITE CODE-->

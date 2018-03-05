@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		meta(name="author" content="Master Vision")
+		meta(name="description" content="Домашнее задание 2 от Жанны Абрамовой «Принимаем верное решение!»")
+		link(rel="icon" type="image/x-icon" href="favicon.ico")
+		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
+		title Домашнее задание 2 от Жанны Абрамовой «Принимаем верное решение!»
+		link(rel="stylesheet" href="css/bootstrap.min.css")
+		link(rel="stylesheet" href="css/styles.css")
+		script(src="//vk.com/js/api/openapi.js?151", type="text/javascript")
+		script(type="text/javascript")
+			| VK.init({apiId:6314801, onlyWidgets: true});
+	body#home_task
+		#fb-root
+		script
+			| (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.11&appId=1039482812818888';fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'))
+		#main_screen
+			include pug/header
+			#first_screen_section
+				.container
+					p#pre 2 домашнее задание от Жанны Абрамовой
+					h1 Принимаем верное решение!
+					.row
+						.col-md-6.col-sm-6
+								.video_wrapper
+									iframe(src="https://www.youtube.com/embed/Prjgh37CdfU?rel=0&autoplay=1", allowfullscreen)
+						.col-md-6.col-sm-6
+							.aut_n_date
+								p 
+									strong Вопрос: 
+									| Напишите под видео, получилось ли у вас определить для себя какой из двух вариантов решения той или иной задачи будет верным
+		section#home-task-feedback
+			.container
+				h3 Ответы на задание и вопросы Жанне пишите в формах ниже
+				.row
+					.col-md-6.col-sm-6
+						#vk_comments
+							script(type="text/javascript")
+								| VK.Widgets.Comments("vk_comments", { limit: 10,  attach: "*" });
+					.col-md-6.col-sm-6
+						#fb
+							.fb-comments(data-href="https://mastervision.su/abramova-mak/home-task-2.html" data-width="100%" data-numposts="15")
+		include pug/aux_footer
+		include pug/no_script
+		<!--BEGIN JIVOSITE CODE-->
+		script
+			| (function() {var widget_id = 'cMdj5UfoZX';var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = '//code.jivosite.com/script/widget/' + widget_id;var ss = document.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s, ss);})();
+		<!--END JIVOSITE CODE-->
