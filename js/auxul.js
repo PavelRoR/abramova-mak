@@ -19,6 +19,8 @@ $(document).ready(function () {
         }
     });
     $('#plan_tabs').tabs();
+    $("#silver_tabs").tabs({show: {effect: "fade",duration: 500}});
+    $("#gold_tabs").tabs({show: {effect: "fade",duration: 500}});
     /*Карусель сертификатов*/
     $("#carousel_certs").owlCarousel({
         navigation: true,

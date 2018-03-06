@@ -1,7 +1,113 @@
 #course_plan
-    background-image url(../img/lacy_bg.jpg)
-    background-repeat no-repeat
-    background-position center
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 92px 0
+	background-image url(../img/lacy_bg.jpg)
+	background-repeat no-repeat
+	background-position center
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 97px 0
+	.button
+		margin-top: 79px
+.wrapper_main
+	width 100%
+	margin 0 auto
+	padding:  11px
+	border-radius: 10px;
+	box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.15);
+	position relative
+	z-index 9
+#silver_tabs
+	background-image: linear-gradient( 0deg, rgb(83,91,94) 4%, rgb(182,184,186) 100%);
+#gold_tabs
+	background-image: linear-gradient( 0deg, rgb(128,110,63) 15%, rgb(226,218,155) 100%);
+#platinum_tabs
+	background-color #cb343d
+.inner_tab_container
+	background-color #fff
+	border-radius: 10px;
+	box-shadow: 0px 0px 17.67px 1.33px rgba(0, 0, 0, 0.1);
+	padding: 36px 15px
+	h4
+		font-size: 24px;
+		font-family: "PlayfairDisplayBold";
+		color: rgb(37, 37, 37);
+		line-height: 1.375;
+		text-align: center;
+		margin 0
+	hr
+		margin 23px 0 32px
+		border-top-color: rgba(0,0,0,.2)
+	h5
+		font-size: 27px;
+		font-family: "PlayfairDisplayBold";
+		color: rgb(176, 19, 29);
+		line-height: 1.222;
+		text-align: center;
+		margin: 0 0 35px
+	h6
+		font-size: 24px;
+		font-family: "RobotoBold";
+		color: rgb(21, 21, 22);
+		line-height: 1.375;
+		text-align: left;
+		padding: 26px 0 15px 15px
+.base_links
+	display: table
+	width: 100%
+	list-style: none
+	position: relative;
+	bottom: -6px;
+	z-index: 0;
+	li
+		display: table-cell
+		width: 33.33334%
+		a
+			width: 261px;
+			height: 68px;
+			font-size: 34px;
+			font-family: "PlayfairDisplayBold";
+			color: rgb(255, 255, 255);
+			line-height: 52px;
+			text-align: center
+			box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.15);
+			display: inline-block
+			border-radius: 10px 10px 0 0;
+			border-top-left 1px solid rgb(154, 137, 88)
+			border-top-right 1px solid rgb(154, 137, 88)
+		&:first-child
+			a
+				background-image: linear-gradient( 0deg, rgb(213,213,215) 0%, rgb(83,91,94) 100%);
+		&:nth-child(2)
+			text-align: center
+			a
+				background-image: linear-gradient( 0deg, rgb(226,218,155) 22%, rgb(128,110,63) 100%);
+		&:last-child
+			text-align: right
+			a
+				background-image: linear-gradient( 0deg, rgb(210,61,69) 0%, rgb(175,18,28) 100%);
+.lessons_links
+	position relative
+	display: table
+	width: 100%
+	li
+		display: table-cell
+		text-align: center
+		&.ui-tabs-active.ui-state-active
+		&.ui-state-hover
+			a
+				color: #b21520
+		a
+			font-size: 24px;
+			font-family: "RobotoBold";
+			color: rgba(21, 21, 22, 0.502);
+			text-decoration: underline;
+			line-height: 1.375;
+			text-align: center;
+.lessons
+	padding-left: 36px
+	li
+		font-size: 20px;
+		font-family: "Roboto";
+		color: rgb(21, 21, 22);
+		line-height: 1.65;
+		text-align: left;
+		padding-bottom: 3px
